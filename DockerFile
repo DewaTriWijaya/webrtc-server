@@ -15,5 +15,5 @@ COPY . .
 
 # Expose the necessary ports for your WebRTC application
 EXPOSE 8080
-EXPOSE 8080 
+
 CMD ["node", "index.js"]

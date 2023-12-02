@@ -42,11 +42,11 @@ jobs:
         with:
           name: node-app
 
-      - name: 'Deploy to Azure Web App'
-        id: deploy-to-webapp
-        uses: azure/webapps-deploy@v2
-        with:
-          app-name: 'voiye-websocket'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F814DBA0226A4979B5D11C785ADDC3A0 }}
-          package: .
+      # - name: 'Deploy to Azure Web App'
+      #   id: deploy-to-webapp
+      #   uses: azure/webapps-deploy@v2
+      #   with:
+      #     app-name: 'voiye-websocket'
+      #     slot-name: 'Production'
+      #     publish-profile: ${{ secrets.VOIYE_WEBSOCKET }}
+      #     package: .
